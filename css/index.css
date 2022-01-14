@@ -10,7 +10,7 @@ img {
 }
 
 header {
-    background-image: url("images/header.jpg");
+    background-image: url("header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
