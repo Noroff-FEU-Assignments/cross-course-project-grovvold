@@ -5,7 +5,7 @@ html, body {
 
 img {
     max-width: 300px;
-    float: left;
+    float: center;
     margin-right: 15px;
 }
 
