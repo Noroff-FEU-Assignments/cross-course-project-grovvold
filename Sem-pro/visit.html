@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityScienceMuseum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="involved.html">Get involved</a></li>
+                </ul>
+            </nav>
+            <img src="images/Burger menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+    
+    <div class="small-container">
+        <h2 class="title">Location</h2>
+        <div class="row">
+            <div class="green-box">
+                The museum is located at Kjeringholmen 1a, 4006 Stavanger.
+            </div>
+        </div>
+        <h2 class="title">Admission</h2>
+        <div class="row">
+            <div class="green-box">
+                The entrance is free for all. 
+                There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. 
+                If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
+            </div>
+        </div>
+        <h2 class="title">Accessibility</h2>
+        <div class="row">
+            <div class="green-box">
+                The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
+            </div>
+        </div>
+        <h2 class="title">Food and drinks</h2>
+        <div class="row">
+            <div class="green-box">
+                There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
+            </div>
+        </div>
+        <h2 class="title">Shop</h2>
+        <div class="row">
+            <div class="green-box">
+                Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
+            </div>
+        </div>
+        <h2 class="title">Opening hours</h2>
+        <div class="row">
+            <div class="green-box">
+                Monday: Closed <br/>
+                Tuesday: 10:00 – 16:00 <br/>
+                Wednesday: 10:00 – 16:00 <br/>
+                Thursday: 10:00 – 16:00 <br/>
+                Friday: 10:00 – 19:00 <br/>
+                Saturday: 9:00 – 16:00 <br/>
+                Sunday: 9:00 – 13:00 <br/>
+            </div>
+        </div>
+    </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><img style="width: 28px; height: 28px;" src="images/Facebook.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Instagram.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Twitter.png"></li>
+                    </ul>
+            </div>
+            <hr>
+            <p class="copyright">Copyright <span id="year"></span> - Community science museum</p>
+        </div>
+    </div>
+    
+<!------ js for toggle menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "250px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<!------ js for year ------>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+    
+    
+</body>
+</html>

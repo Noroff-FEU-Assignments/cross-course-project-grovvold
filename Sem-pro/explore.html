@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityScienceMuseum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="involved.html">Get involved</a></li>
+                </ul>
+            </nav>
+            <img src="images/Burger menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+    
+    <div class="small-container">
+        <h2 class="title">For childrens</h2>
+        <div class="row">
+            <div class="green-box">
+                Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
+                You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
+                During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
+            </div>
+        </div>
+        <h2 class="title">For teachers</h2>
+        <div class="row">
+            <div class="green-box">
+                As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
+                Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.
+            </div>
+        </div>
+        <h2 class="title">For researchers</h2>
+        <div class="row">
+            <div class="green-box">
+                Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
+            </div>
+        </div>
+    </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><img style="width: 28px; height: 28px;" src="images/Facebook.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Instagram.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Twitter.png"></li>
+                    </ul>
+            </div>
+            <hr>
+            <p class="copyright">Copyright <span id="year"></span> - Community science museum</p>
+        </div>
+    </div>
+    
+<!------ js for toggle menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "250px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<!------ js for year ------>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityScienceMuseum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="involved.html">Get involved</a></li>
+                </ul>
+            </nav>
+            <img src="images/Burger menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+    
+    <div class="small-container">
+        <h2 class="title">Gallery</h2>
+        <div class="row">
+            <div class="col-4">
+                <img class="image-size" src="images/astronaut.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/gutt.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/forskning.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/hjerte.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/dino.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/leke.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/museum.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/vrrod.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/halvtmenneske.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/forsker.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/skjelett.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/hode.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/lobby.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/maur.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/vr.jpg">
+            </div>
+            <div class="col-4">
+                <img class="image-size" src="images/vindu.jpg">
+            </div>
+        </div>
+    </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><img style="width: 28px; height: 28px;" src="images/Facebook.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Instagram.png"></li>
+                        <li><img style="width: 28px; height: 28px;" src="images/Twitter.png"></li>
+                    </ul>
+            </div>
+            <hr>
+            <p class="copyright">Copyright <span id="year"></span> - Community science museum</p>
+        </div>
+    </div>
+    
+<!------ js for toggle menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "250px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<!------ js for year ------>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+    
+    
+</body>
+</html>
